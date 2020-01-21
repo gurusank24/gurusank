@@ -1,0 +1,36 @@
+{
+  "name": "Transform CSV,JSON",
+  "description": "Transforms a CSV,JSON file and saves it into Cloud Datastore",
+  "parameters": [{
+    "name": "input",
+    "label": "Input Cloud Storage file",
+    "help_text": "The path to the CSV,JSON file in Google Cloud Storage Bucket",
+    "regexes": ["^gs:\/\/[^\n\r]+$"],
+    "is_optional": false
+  },
+  {
+    "name": "project_id",
+    "label": "Cloud Project ID",
+    "help_text": "The Project ID",
+    "is_optional": false
+  },
+  {
+    "name": "datastore_key",
+    "label": "Datastore input_key",
+    "help_text": "Input Datastore Key to create Kind",
+    "is_optional": false
+  },
+  {
+    "name": "datastore_id",
+    "label": "Datastore ID",
+    "help_text": "Input Datastore ID to unique entities",
+    "is_optional": false
+  },
+  {
+    "name": "file_format",
+    "label": "File Format",
+    "help_text": "Input File format to process. Accepted,csv,json",
+    "is_optional": false
+  }
+  ]
+}
