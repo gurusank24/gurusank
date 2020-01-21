@@ -1,3 +1,9 @@
 Process CSV
 
+python3 -m process_csv_json --runner DataflowRunner --project <your project ID> --staging_location gs://<bucket_name>/staging --temp_location gs://<bucket_name>/tmp --template_location gs://<bucket_name>/templates/process_csv_json --requirements_file requirements.txt
+
+Example:
+
 python3 -m process_csv_json --runner DataflowRunner --project myproject-263315 --staging_location gs://myproject-263315.appspot.com/staging --temp_location gs://myproject-263315.appspot.com/tmp --template_location gs://myproject-263315.appspot.com/templates/process_csv --requirements_file requirements.txt
+
+
